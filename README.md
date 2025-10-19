@@ -2,10 +2,14 @@
 
 A machine learning-powered web application that predicts the resale price of used cars based on various features like manufacturer, model, year, kilometers driven, fuel type, and more.
 
+## 🌐 Live Demo
+**Try it now:** [https://car-resale-price-prediction.onrender.com/](https://car-resale-price-prediction.onrender.com/)
+
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-3.0.0-green.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Live](https://img.shields.io/badge/Status-Live-brightgreen.svg)
 
 ## 🌟 Features
 
@@ -193,8 +197,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+**ARYAN**
+- GitHub: [@ARYAN3012-G](https://github.com/ARYAN3012-G)
+- Live App: [car-resale-price-prediction.onrender.com](https://car-resale-price-prediction.onrender.com/)
 
 ## 🙏 Acknowledgments
 
