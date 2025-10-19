@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model and preprocessors
-model = joblib.load('rf_model_v2 (1).joblib')
-preprocessors = joblib.load('preprocessor_v2 (1).joblib')
+model = joblib.load('rf_model_v2.joblib')
+preprocessors = joblib.load('preprocessor_v2.joblib')
 encoders = preprocessors['encoders']
 scaler = preprocessors['scaler']
 FINAL_FEATURES = preprocessors['feature_order']
