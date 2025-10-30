@@ -1,0 +1,94 @@
+{
+  "test_examples": [
+    {
+      "id": 1,
+      "name": "Budget Sedan - Maruti Swift Dzire",
+      "expected_price_range": "₹3.5-4.5 Lakh",
+      "data": {
+        "manufacturer": "Maruti Suzuki",
+        "model_name": "Swift Dzire VXI",
+        "year": 2015,
+        "km_driven": 85000,
+        "fuel": "Petrol",
+        "transmission": "Manual",
+        "owner": "First Owner",
+        "max_power_bhp": 83.1,
+        "engine_cc": 1197,
+        "max_torque_nm": 113,
+        "drivetrain": "FWD"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Mid-Range Diesel - Honda City",
+      "expected_price_range": "₹7.5-8.5 Lakh",
+      "data": {
+        "manufacturer": "Honda",
+        "model_name": "City VX MT Diesel",
+        "year": 2017,
+        "km_driven": 50000,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "owner": "First Owner",
+        "max_power_bhp": 100,
+        "engine_cc": 1498,
+        "max_torque_nm": 200,
+        "drivetrain": "FWD"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Premium SUV - Hyundai Creta",
+      "expected_price_range": "₹12.0-14.0 Lakh",
+      "data": {
+        "manufacturer": "Hyundai",
+        "model_name": "Creta 1.6 SX Diesel",
+        "year": 2019,
+        "km_driven": 35000,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "owner": "First Owner",
+        "max_power_bhp": 126.2,
+        "engine_cc": 1582,
+        "max_torque_nm": 260,
+        "drivetrain": "FWD"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Luxury Sedan - Skoda Rapid Automatic",
+      "expected_price_range": "₹6.5-7.5 Lakh",
+      "data": {
+        "manufacturer": "Skoda",
+        "model_name": "Rapid 1.6 MPI AT Elegance",
+        "year": 2018,
+        "km_driven": 45000,
+        "fuel": "Petrol",
+        "transmission": "Automatic",
+        "owner": "First Owner",
+        "max_power_bhp": 103.5,
+        "engine_cc": 1598,
+        "max_torque_nm": 153,
+        "drivetrain": "FWD"
+      }
+    },
+    {
+      "id": 5,
+      "name": "High-Mileage Hatchback - Hyundai i20",
+      "expected_price_range": "₹2.8-3.5 Lakh",
+      "data": {
+        "manufacturer": "Hyundai",
+        "model_name": "i20 Sportz 1.2",
+        "year": 2014,
+        "km_driven": 120000,
+        "fuel": "Petrol",
+        "transmission": "Manual",
+        "owner": "Second Owner",
+        "max_power_bhp": 82,
+        "engine_cc": 1197,
+        "max_torque_nm": 115,
+        "drivetrain": "FWD"
+      }
+    }
+  ]
+}

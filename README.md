@@ -1,217 +1,203 @@
-# 🚗 Car Resale Price Prediction
+# 🚗 Car Resale Price Prediction - LightGBM Model
 
-A machine learning-powered web application that predicts the resale price of used cars based on various features like manufacturer, model, year, kilometers driven, fuel type, and more.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-brightgreen?style=for-the-badge)](https://car-resale-price-prediction.onrender.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ARYAN3012-G/car-resale-price-prediction)
 
-## 🌐 Live Demo
-**Try it now:** [https://car-resale-price-prediction.onrender.com/](https://car-resale-price-prediction.onrender.com/)
+An advanced car resale price prediction web application using state-of-the-art LightGBM machine learning model for accurate price estimation.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Flask](https://img.shields.io/badge/Flask-3.0.0-green.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Live](https://img.shields.io/badge/Status-Live-brightgreen.svg)
+## 🌐 Live Application
 
-## 🌟 Features
+**🔗 [Try the App Live](https://car-resale-price-prediction.onrender.com/)**
 
-- **AI-Powered Predictions**: Uses RandomForest Regressor with 73% accuracy (R² Score)
-- **Smart Model Filtering**: Dynamic dropdown that filters car models based on manufacturer
-- **Modern Red Theme UI**: Beautiful, responsive design with smooth animations
-- **Real-time Validation**: Client-side input validation with proper formatting
-- **Comprehensive Dataset**: Trained on 2,059+ real car transactions
-- **High Accuracy**: Mean error of just ₹2.98 Lakh
+Experience the power of machine learning in predicting car resale values with our intuitive web interface.
 
-## 📊 Model Performance
+## ✨ Features
 
-- **R² Score**: 73.40%
-- **Mean Absolute Error (MAE)**: ₹2.98 Lakh
-- **Root Mean Squared Error (RMSE)**: ₹12.67 Lakh
-- **Algorithm**: RandomForest Regressor (100 trees)
-- **Features Used**: 9 features including manufacturer, model, year, km driven, fuel type, etc.
+- **🤖 LightGBM Algorithm**: State-of-the-art gradient boosting model with 84% R² score
+- **⚡ Enhanced Features**: Includes max torque and drivetrain analysis
+- **🔍 Real-time Predictions**: Get instant car valuation estimates
+- **🎨 Modern UI**: Beautiful, responsive interface with smooth animations
+- **📊 Comprehensive Analysis**: Uses 13 key features for accurate predictions
+- **📱 Mobile Responsive**: Works seamlessly on all device sizes
+- **🔥 High Performance**: Optimized for speed and accuracy
 
-## 🛠️ Tech Stack
+## 📈 Model Performance
 
-**Backend:**
-- Flask (Python web framework)
-- scikit-learn (Machine Learning)
-- pandas & numpy (Data processing)
-- joblib (Model serialization)
+| Metric | Value |
+|--------|-------|
+| **R² Score** | 84.40% |
+| **Mean Absolute Error (MAE)** | ₹2.32 Lakh |
+| **Root Mean Squared Error (RMSE)** | ₹9.76 Lakh |
+| **Training Data** | 1,800+ real car transactions |
+| **Model Type** | LightGBM Gradient Boosting |
 
-**Frontend:**
-- HTML5, CSS3, JavaScript
-- Font Awesome (Icons)
-- Google Fonts (Poppins)
+## 🔧 Features Used
 
-## 📁 Project Structure
+| # | Feature | Type | Description |
+|---|---------|------|-------------|
+| 1 | Year of Purchase | Numerical | Manufacturing year of the vehicle |
+| 2 | Kilometers Driven | Numerical | Total distance covered by the car |
+| 3 | Max Power (bhp) | Numerical | Engine's maximum power output |
+| 4 | Engine Size (cc) | Numerical | Engine displacement in cubic centimeters |
+| 5 | Car Age | Numerical | Age of the car (derived feature) |
+| 6 | Age-Km Interaction | Numerical | Interaction between age and kilometers |
+| 7 | Max Torque (Nm) | Numerical | Engine's maximum torque output |
+| 8 | Fuel Type | Categorical | Petrol, Diesel, CNG, LPG |
+| 9 | Transmission | Categorical | Manual or Automatic |
+| 10 | Owner Type | Categorical | First, Second, Third, Fourth & Above |
+| 11 | Drivetrain | Categorical | FWD, RWD, AWD |
+| 12 | Manufacturer | Categorical | Car brand/manufacturer |
+| 13 | Model Name | Categorical | Specific car model |
 
-```
-CAR_RESALE_PRICE_PREDICTION/
-│
-├── app.py                          # Flask application
-├── requirements.txt                # Python dependencies
-├── .gitignore                     # Git ignore rules
-├── README.md                       # Project documentation
-├── EXAMPLES.md                     # Test examples
-│
-├── rf_model_v2 (1).joblib         # Trained ML model
-├── preprocessor_v2 (1).joblib     # Feature preprocessors
-├── cardataset2.csv                # Training dataset
-│
-├── static/
-│   ├── script.js                  # Frontend JavaScript
-│   └── style.css                  # Styling (Red theme)
-│
-└── templates/
-    └── index.html                 # Main HTML template
-```
-
-## 🚀 Installation & Setup
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.8+
 - pip package manager
 
-### Steps
+### Local Setup
 
 1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/car-resale-price-prediction.git
-cd car-resale-price-prediction
+   ```bash
+   git clone https://github.com/ARYAN3012-G/car-resale-price-prediction.git
+   cd car-resale-price-prediction
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**
+   ```bash
+   python app.py
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5000`
+
+## 📦 Deployment
+
+### Live Deployment
+This application is currently deployed on **Render**: [car-resale-price-prediction.onrender.com](https://car-resale-price-prediction.onrender.com/)
+
+### Deployment Platforms
+Ready to deploy on various platforms:
+
+| Platform | Status | Notes |
+|----------|--------|-------|
+| ✅ **Render** | Live | Current deployment |
+| 🔧 **Heroku** | Ready | Include `Procfile` |
+| 🔧 **Railway** | Ready | Zero-config deployment |
+| 🔧 **Google Cloud Platform** | Ready | Use App Engine |
+| 🔧 **Vercel** | Ready | For serverless deployment |
+
+### Deployment Files Included
+- `Procfile` - For Heroku/Render deployment
+- `runtime.txt` - Python version specification
+- `requirements.txt` - Dependencies list
+
+## 🛠️ Technology Stack
+
+### Backend
+- **🌐 Flask** - Web framework
+- **🤖 LightGBM** - Machine learning model
+- **🐍 Python 3.8+** - Programming language
+
+### Frontend
+- **📄 HTML5** - Structure
+- **🎨 CSS3** - Styling with animations
+- **⚡ JavaScript** - Interactive functionality
+- **📱 Responsive Design** - Mobile-first approach
+
+### Data Processing
+- **🐼 Pandas** - Data manipulation
+- **🔢 NumPy** - Numerical computations
+- **🧠 Scikit-learn** - Data preprocessing and model utilities
+- **📊 Pickle** - Model serialization
+
+## Model Details
+
+The LightGBM model was trained using:
+- **n_estimators**: 400
+- **learning_rate**: 0.1
+- **max_depth**: 9
+- **Log transformation** on target variable for better predictions
+- **StandardScaler** for numerical features
+- **OneHotEncoder** for categorical features (fuel, transmission, owner, drivetrain)
+- **OrdinalEncoder** for manufacturer and model names
+
+## API Endpoints
+
+### GET `/api/options`
+Returns available options for all dropdown fields.
+
+### POST `/api/predict`
+Accepts car details and returns predicted resale price.
+
+**Request Body:**
+```json
+{
+  "manufacturer": "Honda",
+  "model_name": "City",
+  "year": 2018,
+  "km_driven": 45000,
+  "fuel": "Petrol",
+  "transmission": "Manual",
+  "owner": "First Owner",
+  "max_power_bhp": 118,
+  "engine_cc": 1498,
+  "max_torque_nm": 145,
+  "drivetrain": "FWD"
+}
 ```
 
-2. **Create virtual environment** (recommended)
-```bash
-python -m venv venv
-
-# On Windows
-venv\Scripts\activate
-
-# On macOS/Linux
-source venv/bin/activate
+**Response:**
+```json
+{
+  "success": true,
+  "predicted_price": 725000.50,
+  "price_lakh": 7.25,
+  "formatted_price": "₹7.25 Lakh"
+}
 ```
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+## 📸 Screenshots
 
-4. **Run the application**
-```bash
-python app.py
-```
+### Home Page
+The main interface where users can input car details and get instant price predictions.
 
-5. **Open in browser**
-```
-http://localhost:5000
-```
-
-## 📝 Usage
-
-1. **Select Manufacturer**: Choose the car brand from the dropdown
-2. **Select Model**: Pick the specific car model (filtered by manufacturer)
-3. **Enter Details**: Fill in year, kilometers, fuel type, transmission, owner type
-4. **Add Specifications**: Enter max power (bhp) and engine size (cc)
-5. **Get Prediction**: Click "Predict Price" to see the estimated resale value
-
-See [EXAMPLES.md](EXAMPLES.md) for sample test cases.
-
-## 🎯 Model Features
-
-The prediction model considers the following features:
-
-1. **Manufacturer** - Car brand (e.g., Honda, Maruti Suzuki, BMW)
-2. **Model Name** - Specific car model (e.g., Amaze 1.2 VX i-VTEC)
-3. **Year** - Year of purchase (1990-2025)
-4. **Kilometers Driven** - Total distance driven (0-500,000 km)
-5. **Fuel Type** - Petrol, Diesel, CNG, Electric
-6. **Transmission** - Manual or Automatic
-7. **Owner Type** - First, Second, Third, or UnRegistered
-8. **Max Power** - Engine power in bhp (30-700)
-9. **Engine Size** - Engine capacity in cc (500-7000)
-
-## 🧪 Testing
-
-Sample test data is available in `EXAMPLES.md`. Try these examples:
-
-- **Budget Sedan**: Honda Amaze 2017 - Expected: ₹5.22 Lakh
-- **Popular Hatchback**: Maruti Swift 2014 - Expected: ₹4.50 Lakh
-- **Compact SUV**: Hyundai Creta 2019 - Expected: ₹11.75 Lakh
-- **Luxury SUV**: BMW X1 2017 - Expected: ₹26.50 Lakh
-
-## 🎨 UI Features
-
-- **Red Theme**: Modern red gradient design
-- **Responsive Layout**: Works on desktop, tablet, and mobile
-- **Smart Dropdowns**: Model filter based on manufacturer selection
-- **Input Formatting**: Auto-formats kilometers with commas
-- **Smooth Animations**: GPU-accelerated transitions
-- **Form Validation**: Real-time validation with helpful error messages
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a `.env` file (optional):
-```
-FLASK_APP=app.py
-FLASK_ENV=production
-PORT=5000
-```
-
-### Model Retraining
-To retrain with new data, update `cardataset2.csv` and run the training notebook.
-
-## 📈 Deployment
-
-### Deploy to Render
-1. Create account on [Render.com](https://render.com)
-2. Connect GitHub repository
-3. Create new Web Service
-4. Configure:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python app.py`
-
-### Deploy to Railway
-1. Create account on [Railway.app](https://railway.app)
-2. Import GitHub repository
-3. Railway auto-detects Python and deploys
-
-### Deploy to Heroku
-1. Create `Procfile`:
-```
-web: python app.py
-```
-2. Deploy via Heroku CLI or GitHub integration
+### Prediction Results
+Real-time prediction results with formatted price display in Indian Rupees.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
+### How to Contribute
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## 📧 Contact
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👤 Author
-
-**ARYAN**
-- GitHub: [@ARYAN3012-G](https://github.com/ARYAN3012-G)
-- Live App: [car-resale-price-prediction.onrender.com](https://car-resale-price-prediction.onrender.com/)
+- **GitHub**: [@ARYAN3012-G](https://github.com/ARYAN3012-G)
+- **Project Link**: [https://github.com/ARYAN3012-G/car-resale-price-prediction](https://github.com/ARYAN3012-G/car-resale-price-prediction)
+- **Live Demo**: [https://car-resale-price-prediction.onrender.com/](https://car-resale-price-prediction.onrender.com/)
 
 ## 🙏 Acknowledgments
 
-- Dataset: CarDataset2 (2,059 car transactions)
-- ML Library: scikit-learn
-- Web Framework: Flask
-- UI Inspiration: Modern gradient designs
+- Dataset source for training the machine learning model
+- LightGBM library for providing excellent gradient boosting framework
+- Flask community for the amazing web framework
+- Render platform for free deployment hosting
 
-## 📞 Contact
+## 📜 License
 
-For questions or support, please open an issue on GitHub.
+This project is for educational and demonstration purposes. Feel free to use it for learning and non-commercial purposes.
 
 ---
 
-Made with ❤️ and Machine Learning
+⭐ **Star this repository if you found it helpful!** ⭐

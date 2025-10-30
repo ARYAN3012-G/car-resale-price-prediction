@@ -23,12 +23,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-ENV/
-env/
-.venv
-
 # IDEs
 .vscode/
 .idea/
@@ -40,10 +34,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
-
 # Environment variables
 .env
 .env.local
@@ -51,10 +41,15 @@ Thumbs.db
 # Logs
 *.log
 
-# Database
-*.db
-*.sqlite
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Temporary files
-check_models.py
-*.tmp
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Explicitly included file types (not ignored)
+!*.pptx
+!*.pdf
+!*.ipynb
