@@ -5,11 +5,16 @@
 [![Flask](https://img.shields.io/badge/Flask-Web%20App-black?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
 [![LightGBM](https://img.shields.io/badge/LightGBM-ML%20Model-orange?style=for-the-badge)](https://lightgbm.readthedocs.io/)
 
-> An advanced machine learning project for predicting car resale prices using state-of-the-art **LightGBM** algorithm with **84% R² accuracy**.
+> A comprehensive machine learning project that predicts car resale prices by comparing **Random Forest**, **XGBoost**, and **LightGBM** algorithms. The best-performing LightGBM model (81% R² accuracy) is deployed as a full-stack web application with modern UI.
 
 ## 📋 Project Overview
 
-This repository contains a comprehensive machine learning project that predicts car resale prices based on various vehicle features. The project includes data analysis, model training, deployment, and a fully functional web application.
+This repository contains an end-to-end machine learning project featuring:
+- **Model Comparison**: Trained and evaluated 3 gradient boosting algorithms (Random Forest, XGBoost, LightGBM)
+- **Best Model**: LightGBM achieved 81% R² cross-validation accuracy
+- **Production Deployment**: Flask web application live on Render
+- **Complete Analysis**: Jupyter notebook with EDA, feature engineering, and model evaluation
+- **Professional Documentation**: Full project report (PDF) and presentation (PPT)
 
 ## 🌐 Live Application
 
@@ -19,22 +24,43 @@ Experience real-time car price predictions with our intuitive web interface!
 
 ## ✨ Key Features
 
-- **🤖 LightGBM Algorithm** - State-of-the-art gradient boosting model with 84% R² score
+- **🤖 Multi-Model Comparison** - Evaluated Random Forest, XGBoost, and LightGBM algorithms
+- **🏆 Best Model Deployed** - LightGBM selected with 81% cross-validation R² score
 - **📊 Comprehensive Analysis** - Uses 13 key features including max torque and drivetrain
 - **🎨 Modern Web Interface** - Beautiful, responsive Flask application
 - **📱 Mobile Responsive** - Works seamlessly on all device sizes
 - **⚡ Real-time Predictions** - Get instant car valuation estimates
 - **🔥 High Performance** - Optimized for speed and accuracy
 
-## 📈 Model Performance
+## 📈 Model Performance Comparison
+
+### 🏆 Algorithm Comparison
+
+| Model | CV R² Score* | Test R² Score | MAE | RMSE | Status |
+|-------|-------------|---------------|-----|------|--------|
+| **🥇 LightGBM** | **81%** | 74% | ₹3.11 Lakh | ₹12.57 Lakh | ✅ **Deployed** |
+| **🥈 XGBoost** | 80% | 57% | ₹3.27 Lakh | ₹16.12 Lakh | Tested |
+| **🥉 Random Forest** | 79% | 69% | ₹2.96 Lakh | ₹13.73 Lakh | Tested |
+
+*Cross-Validation R² Score (5-fold) - Most reliable performance metric
+
+### 🎯 Why LightGBM?
+
+**LightGBM** was selected for deployment because:
+- ✅ **Highest CV R² Score** (81%) - Best generalization performance
+- ✅ **Most Stable** - Lowest standard deviation (0.030) across folds
+- ✅ **Fastest Training** - Optimized gradient boosting algorithm
+- ✅ **Lower Memory Usage** - More efficient than Random Forest
+- ✅ **Best GridSearch Score** - 86% during hyperparameter tuning
+
+### 📊 Deployed Model Details
 
 | Metric | Value |
 |--------|-------|
-| **R² Score** | 84.40% |
-| **Mean Absolute Error (MAE)** | ₹2.32 Lakh |
-| **Root Mean Squared Error (RMSE)** | ₹9.76 Lakh |
 | **Training Data** | 1,800+ real car transactions |
+| **Features Used** | 13 engineered features |
 | **Algorithm** | LightGBM Gradient Boosting |
+| **Hyperparameters** | n_estimators=400, learning_rate=0.1, max_depth=9 |
 
 ## 📂 Repository Structure
 
